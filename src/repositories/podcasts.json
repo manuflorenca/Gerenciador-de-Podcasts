@@ -16,5 +16,11 @@
       "episode": "MANU FLORENÇA - Flow #339",
       "videoId":"00000",
       "categories": ["esporte", "programaçao"]
+    },
+    {
+      "podcastName": "venus",
+      "episode": "Xuxa",
+      "videoId":"00000",
+      "categories": ["humor"]
     }
 ]
