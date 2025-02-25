@@ -15,7 +15,11 @@ export const getFilterEpisodes = async(
     req: IncomingMessage,
     res: ServerResponse
 ) => {
-    const content = await serviceFilterEpisode("flow");
+    // http://localhost:3333/api/episode?p=flow
+    const queryString = req.url?.split("?p=")[1] || "";
+
+    const content = await serviceFilterEpisode(queryString);
+
     res.writeHead(200, {"content-type":"application/json"});
     res.end(JSON.stringify(content));
 };
