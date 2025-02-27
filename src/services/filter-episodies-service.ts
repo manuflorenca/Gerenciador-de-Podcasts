@@ -2,13 +2,13 @@
 // import path from "path";
 import { IncomingMessage } from "http";
 import { repositoryPodcast } from "../repositories/podcasts-repository"
-import { FilterPodCastModel } from "../models/filter-podcast-model";
+import { PodcastTransferModel } from "../models/filter-podcast-model";
 import { StatusCode } from "../utils/status-code";
 
-export const serviceFilterEpisode = async(podcastName: string | undefined):Promise<FilterPodCastModel> => {
+export const serviceFilterEpisode = async(podcastName: string | undefined):Promise<PodcastTransferModel> => {
 
     // Define a interface de retorno
-    let responseFormatat: FilterPodCastModel = {
+    let responseFormatat: PodcastTransferModel = {
         statusCode:0,
         body:[],
     };
